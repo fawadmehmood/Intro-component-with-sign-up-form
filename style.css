@@ -24,17 +24,18 @@ body{
     min-height: 100vh;
     background: url(/images/bg-intro-desktop.png) , var(--Red);
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-
 }
 
 .container{
     width: 80%;
     display: flex;
     min-height: 100vh;
+    padding: 5rem 0;
     
 }
 .left{
@@ -69,6 +70,7 @@ body{
 
 .left .l_desc{
     margin-top: 3rem;
+    font-weight: var(--font_500);
 }
 
 .right .trial p{
@@ -132,6 +134,7 @@ body{
 .trial_btn{
     width: 100%;
    height: 4.5rem;
+   padding: 0 1.5rem;
    outline: none;
    text-transform: uppercase;
    background-color: var(--Green);
@@ -163,8 +166,6 @@ body{
 }
 
 @media screen and (min-width: 1440px) {
-
-
     .right .trial{
        padding: 3rem 2rem;
    }
@@ -202,3 +203,38 @@ body{
     font-size: 3rem;
  }
  }
+
+ @media screen and (max-width: 800px) {
+ .container{
+     flex-direction: column;
+ }
+ .right{
+     margin: 4rem 0 0 0;
+     justify-content: flex-start;
+ }
+ .left{
+     text-align: center;
+ }
+ .left .l_header{
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+}
+
+.left .l_desc{
+    /* margin-top: 3rem; */
+    font-size: 1.4rem;
+}
+
+}
+
+@media screen and (max-width: 400px) {
+    .form{
+        padding:  2rem 1.5rem;
+    }
+    .trial_btn{
+        font-size: 1.2rem;
+    }
+    .right .trial p{
+          font-size: 1.4rem;
+    }
+}
