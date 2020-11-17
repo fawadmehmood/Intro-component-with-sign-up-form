@@ -162,3 +162,43 @@ body{
     font-weight: var(--font_700);
 }
 
+@media screen and (min-width: 1440px) {
+
+
+    .right .trial{
+       padding: 3rem 2rem;
+   }
+   .right .trial p{
+       font-size: 2.5rem;
+     font-weight: 300;
+ }
+ 
+ .right .trial p span{
+   font-weight: var(--font_700);
+ }
+ 
+ .form{
+     padding: 4rem;
+ }
+ 
+ .left .l_header{
+     font-size: 7rem;
+     line-height: 8rem;
+ }
+ 
+ .input_wrapper input, .trial_btn{
+      height: 7rem;
+      font-size: 2rem;
+ }
+ 
+ .input_wrapper{
+      margin-top: 3rem;
+ }
+ 
+ .form .t_c{
+     font-size: 2rem;
+ }
+ .left .l_desc{
+    font-size: 3rem;
+ }
+ }
