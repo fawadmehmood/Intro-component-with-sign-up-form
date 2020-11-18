@@ -117,18 +117,43 @@ body{
     content: url(/images/icon-error.svg);
     top: 1.3rem;
    right: 1.7rem;
-   /* display: none; */
+   visibility: hidden;
 
+}
+
+.input_wrapper.active::before{
+    visibility: visible;
 }
 
 .input_wrapper p{
     color: var(--Red);
     font-size: 1.2rem;
     text-align: right;
-    padding-top: 0.8rem;
     font-style: italic;
     font-weight: var(--font_500);
-    /* display: none; */
+    height: 0rem;
+    visibility: hidden;
+    transition: height 0.3s;
+
+
+}
+
+.visible{
+    height: 2.6rem !important;
+    padding-top: 0.8rem !important;
+    visibility: visible !important;
+    animation: visibleanim 0.5s !important;
+    
+}
+
+@keyframes visibleanim{
+    from{
+        transform: scale(0);
+      }
+      to{
+         transform: scale(1);
+      }
+
 }
 
 .trial_btn{

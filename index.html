@@ -29,23 +29,23 @@
       </div>
       <form class="form">
            <div class="input_wrapper">
-             <input type="text" placeholder="First Name">
+             <input type="text" placeholder="First Name" class="input_f" oninput="hideErrorMessage(this)">
              <p class="f_name_error">First Name cannot be empty</p>
            </div>
            <div class="input_wrapper">
-            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="Last Name" class="input_f" oninput="hideErrorMessage(this)">
             <p class="l_name_error">Last Name cannot be empty</p>
           </div>
           <div class="input_wrapper">
-            <input type="email" placeholder="Email Address">
+            <input type="email" placeholder="Email Address" class="input_f" oninput="hideErrorMessage(this)">
             <p class="e_error">Email Address cannot be empty</p>
           </div>
           <div class="input_wrapper">
-            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Password" class="input_f" oninput="hideErrorMessage(this)">
             <p class="p_error">Password cannot be empty</p>
           </div>
 
-          <button type="button" class="trial_btn">Claim your free Trial</button>
+          <button type="button" class="trial_btn" onclick="checkValidation()">Claim your free Trial</button>
           <p class="t_c">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
       </form>
   </div>
@@ -75,5 +75,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer> -->
+  <script src="script.js"></script>
 </body>
 </html>
