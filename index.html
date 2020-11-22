@@ -27,25 +27,25 @@
       <div class="trial">
         <p class="trial_text"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
       </div>
-      <form class="form">
+      <form class="form" action="#">
            <div class="input_wrapper">
-             <input type="text" aria-label="firstname" placeholder="First Name" class="input_f" oninput="hideErrorMessage(this)">
+             <input type="text" aria-label="firstname" name="firstname" placeholder="First Name" class="input_f" oninput="hideErrorMessage(this)">
              <p class="f_name_error">First Name cannot be empty</p>
            </div>
            <div class="input_wrapper">
-            <input type="text" aria-label="lastname" placeholder="Last Name" class="input_f" oninput="hideErrorMessage(this)">
+            <input type="text" aria-label="lastname" name="lastname" placeholder="Last Name" class="input_f" oninput="hideErrorMessage(this)">
             <p class="l_name_error">Last Name cannot be empty</p>
           </div>
           <div class="input_wrapper">
-            <input type="email" aria-label="email" placeholder="Email Address" class="input_f" oninput="hideErrorMessage(this)">
+            <input type="email" aria-label="email" name="email" placeholder="Email Address" class="input_f" oninput="hideErrorMessage(this)">
             <p class="e_error">Email Address cannot be empty</p>
           </div>
           <div class="input_wrapper">
-            <input type="password" aria-label="password" placeholder="Password" class="input_f" oninput="hideErrorMessage(this)">
+            <input type="password" aria-label="password" name="password" placeholder="Password" class="input_f" oninput="hideErrorMessage(this)">
             <p class="p_error">Password cannot be empty</p>
           </div>
 
-          <button type="button" class="trial_btn" onclick="checkValidation()">Claim your free Trial</button>
+          <button type="submit" class="trial_btn" onclick="checkValidation(event)">Claim your free Trial</button>
           <p class="t_c">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
       </form>
   </div>
