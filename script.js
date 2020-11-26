@@ -15,13 +15,11 @@ function hideErrorMessage(elem){
           else if (elem.value !== '' && elem.getAttribute("type") === "email") {
                 return validateEmail(elem.value, elem);         
         }  
-   else{
-      if(elem.nextElementSibling.classList.contains("visible") && elem.parentElement.classList.contains("active")){
+     else if(elem.nextElementSibling.classList.contains("visible") && elem.parentElement.classList.contains("active")){
         elem.nextElementSibling.classList.remove("visible");
         elem.parentElement.classList.remove("active");
 
     }
-}
 }
 
 
