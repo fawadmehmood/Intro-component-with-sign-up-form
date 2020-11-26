@@ -174,7 +174,7 @@ body{
    transition: opacity 0.3s;
 }
 
-.trial_btn:hover{
+.trial_btn:hover, .trial_btn:focus{
     opacity: 1;
 }
 .form .t_c{
